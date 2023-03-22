@@ -1,0 +1,48 @@
+GLOBALS----
+    __dirname
+    __filename
+
+
+module----
+    every page is module (by default)
+
+
+module.exports----
+    It is an object in itself hence - 
+        module.exports={var1,var2}
+        module.exports=var1
+        module.exports.var={}
+        module.exports.var=[]
+
+
+    when we import any module, node by default invoke it
+
+
+BUILT-IN MODULES
+    1.os
+    2.path
+    3.fs
+    4.http
+
+
+    fs----
+        sync----
+        readFileSync('./folder/subfolder/fileName','encodingType')---- node knows how to decode
+
+        writeFileSync('./folder/subfolder/fileName','text to be added',{flag:'a'})---- third argument tells that node need to append, by default it overrides
+
+        async----
+        readFile('./path',encodingType,(err,res)=>{})
+        writeFile('./path','text to be added',(err,res)=>{})
+
+
+http----
+    used to create server which listens to the requests from client and respond accordingly
+
+
+package.json----
+    manifest file, which contains all the dependencies which are needed to run the current project smoothly
+
+    npm init
+    npm init -y (everything by default)
+    
